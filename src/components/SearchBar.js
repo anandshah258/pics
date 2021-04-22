@@ -3,6 +3,10 @@ import React from 'react';
 class SearchBar extends React.Component {
   state = { term: 'cars' };
 
+  componentDidMount() {
+    this.props.onSubmit(this.state.term);
+  }
+
   onFormSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.term);
