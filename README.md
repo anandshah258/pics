@@ -1,4 +1,4 @@
-# pics
+# Pics
 
 ##### A React application which displays images to the user based on the search term. 
 
